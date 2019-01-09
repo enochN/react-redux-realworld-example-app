@@ -26,6 +26,8 @@ const ArticlePreview = props => {
 
   const handleClick = ev => {
     ev.preventDefault();
+    //TODO Check if current user has access to favorite or unfavorite
+    // If current user does have access, check and require them to sign up
     if (article.favorited) {
       props.unfavorite(article.slug);
     } else {
